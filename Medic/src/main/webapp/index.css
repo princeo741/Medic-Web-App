@@ -27,9 +27,16 @@ section.hero {
   height: 60vh; /* Adjust hero section height as needed */
   background-color: rgba(0, 0, 0, 0.5); /* Optional translucent overlay over hero image */
   overflow: hidden; /* Needed for hover effects */
+ 
+}
+.hero-image{
+	height: 100%;
+	
+	
 }
 .hero-image-container {
     text-align: center; /* Centers the content within the container */
+  
 }
 
 

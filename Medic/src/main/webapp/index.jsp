@@ -16,7 +16,9 @@
 
 <section class="hero">
     <div class="hero-image-container">
-        <img src="hero-image.jpg" alt="Medic App Hero Image" class="hero-image">
+        <img src="ImageDB/timer.jpg" 
+        alt="Medic App Hero Image" class="hero-image" >
+        
     </div>
     <div class="hero-content">
         <h2>Never Miss a Dose Again!</h2>
