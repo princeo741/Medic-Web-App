@@ -5,113 +5,117 @@ body {
   padding: 0;
 }
 
-nav {
+header.header {
   background-color: #f0f0f0;
-  padding: 10px 20px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-nav li {
-  display: inline-block;
-  margin-right: 20px;
+header.header .logo {
+  width: 100px; /* Adjust logo width as needed */
 }
 
-nav a {
-  text-decoration: none;
-  color: #333;
+header.header h1 {
+  font-size: 2em;
+  margin: 0;
 }
 
-nav #searchBox {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+section.hero {
+  display: flex;
+  height: 60vh; /* Adjust hero section height as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Optional translucent overlay over hero image */
+  overflow: hidden; /* Needed for hover effects */
+}
+.hero-image-container {
+    text-align: center; /* Centers the content within the container */
 }
 
-.hero {
+
+section.hero .hero-content {
+  flex: 1;
+  padding: 50px;
   text-align: center;
-  padding: 50px 0;
-  background-image: url("hero-image.jpg"); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  color: #fff
-
+  color: #fff;
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 10px;
+section.hero .hero-content:hover {
+  transform: scale(1.1); /* Slight zoom on hover for emphasis */
 }
 
-.hero h2 {
-  font-size: 1.5em;
+section.hero .hero-content h2 {
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.hero button {
+section.hero .hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+section.hero .hero-content .cta-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+section.hero .hero-content .button {
   background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  margin-right: 10px;
+  margin: 10px;
   cursor: pointer;
+  text-decoration: none; /* Remove underline from button text */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: background-color 0.3s ease-in-out; /* Smooth color change on hover */
 }
 
-.hero button:hover {
+section.hero .hero-content .button:hover {
   background-color: #2980b9;
 }
 
-.benefits,
-.features,
-.trust,
-.cta {
-	
+section.filler-content {
   padding: 50px 0;
+}
+
+section.filler-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.benefits h2,
-.features h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
- 
+section.filler-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.benefit-card,
-.feature-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+section.filler-content ul {
+  list-style: none;
+  padding: 0;
   margin: 0 auto;
   max-width: 800px;
 }
 
-.benefit-card,
-.feature-list li {
-  margin: 10px;
-  padding: 20px;
+section.filler-content li {
+  margin: 10px 0;
+  padding: 15px 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  width: calc(33% - 40px);
+  background-color: #f5f5f5; /* Optional light background for list items */
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for list items */
 }
 
-.cta button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  margin: 10px;
-  cursor: pointer;
+footer.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
 }
 
-.cta button:hover {
-  background-color: #2980b9;
+footer.footer p {
+  margin: 0;
 }
+
