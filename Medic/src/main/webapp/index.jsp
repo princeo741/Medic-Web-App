@@ -11,12 +11,14 @@
 <body>
 
 <header class="header">
-    <img src="logo.png" alt="Medic App Logo" class="logo">  <h1>Medic App</h1>
+    <img src="ImageDB/Logo.jpg" alt="Medic App Logo" class="logo">  <h1>Medic App</h1>
 </header>
 
 <section class="hero">
+
+
     <div class="hero-image-container">
-        <img src="ImageDB/timer.jpg" 
+        <img src="ImageDB/heroclock.jpg" 
         alt="Medic App Hero Image" class="hero-image" >
         
     </div>
@@ -35,10 +37,10 @@
     <h2>Why Choose Medic App?</h2>
     <p>Medic App simplifies medication management, empowering you to stay on top of your health. Here's how:</p>
     <ul>
-        <li>**Personalized Reminders:** Set customized reminders to ensure you never miss a dose.</li>
-        <li>**Medication Tracking:** Easily track your medications, including dosage, frequency, and refill schedules.</li>
-        <li>**Multiple Medication Support:** Manage all your medications in one convenient place.</li>
-        <li>**Secure and Private:** Your information is protected with industry-standard security measures.</li>
+        <li><b>Personalized Reminders:</b> Set customized reminders to ensure you never miss a dose.</li>
+        <li><b>Medication Tracking:</b> Easily track your medications, including dosage, frequency, and refill schedules.</li>
+        <li><b>Multiple Medication Support:</b> Manage all your medications in one convenient place.</li>
+        <li><b>Secure and Private:</b> Your information is protected with industry-standard security measures.</li>
     </ul>
 </section>
 
