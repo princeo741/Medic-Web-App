@@ -1,0 +1,102 @@
+@charset "ISO-8859-1";
+/* Styles for main.jsp */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Make header, content, and footer stack vertically */
+  min-height: 100vh; /* Set minimum height for full viewport */
+}
+
+.header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Stretch header across full width */
+}
+
+.header .logo {
+  width: 100px; /* Adjust logo width as needed */
+}
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.main-content {
+  flex: 1; /* Make main content fill remaining space */
+  display: flex; /* Arrange sections side-by-side */
+  padding: 20px;
+}
+
+.actions,
+.today-medication,
+.week-month-medication {
+  flex: 1; /* Make each section take equal width */
+  margin: 10px; /* Add spacing between sections */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.actions h2,
+.today-medication h2,
+.week-month-medication h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+.actions button {
+  background-color: #3498db; /* Adjust button color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.actions button:hover {
+  background-color: #2980b9; /* Darken button on hover */
+}
+
+.today-medication ul,
+.week-month-medication p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.today-medication li {
+  margin-bottom: 5px;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  width: 100%; /* Stretch footer across full width */
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Add media query for smaller screens (optional) */
+@media only screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+
+  .actions,
+  .today-medication,
+  .week-month-medication {
+    width: 100%; /* Make sections full width on small screens */
+  }
+}
